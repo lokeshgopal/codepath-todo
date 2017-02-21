@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="@string/task_title">
+    </TextView>
+
+    <EditText
+        android:id="@+id/task_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nameLabel"
+        android:layout_alignBottom="@+id/nameLabel"
+        android:layout_toRightOf="@+id/nameLabel"
+        android:layout_marginBottom="20dp"
+        android:hint="Task name"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:enabled="false" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/descLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameLabel"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="@string/task_desc">
+    </TextView>
+
+    <EditText
+        android:id="@+id/task_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/descLabel"
+        android:layout_alignBottom="@+id/descLabel"
+        android:layout_toRightOf="@+id/descLabel"
+        android:layout_marginBottom="20dp"
+        android:inputType="textLongMessage"
+        android:hint="Task description"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:enabled="false">
+    </EditText>
+
+    <TextView
+        android:id="@+id/dateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descLabel"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="@string/task_due">
+    </TextView>
+
+    <EditText
+        android:id="@+id/due_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dateLabel"
+        android:layout_alignBottom="@+id/dateLabel"
+        android:layout_toRightOf="@+id/dateLabel"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:hint="Due date"
+        android:textStyle="bold"
+        android:enabled="false">
+    </EditText>
+
+    <TextView
+        android:id="@+id/priorityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateLabel"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentLeft="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="@string/task_priority">
+    </TextView>
+
+    <EditText
+        android:id="@+id/priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/due_date"
+        android:layout_alignBaseline="@+id/priorityLabel"
+        android:layout_alignBottom="@+id/priorityLabel"
+        android:layout_toRightOf="@+id/priorityLabel"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"
+        android:hint="Task priority"
+        android:textStyle="bold"
+        android:enabled="false">
+    </EditText>
+
+    <TextView
+        android:id="@+id/statusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/priorityLabel"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentLeft="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="@string/task_status">
+    </TextView>
+
+    <EditText
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priority"
+        android:layout_alignBaseline="@+id/statusLabel"
+        android:layout_alignBottom="@+id/statusLabel"
+        android:layout_toRightOf="@+id/statusLabel"
+        android:layout_marginBottom="10dp"
+        android:hint="Task status"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:enabled="false">
+    </EditText>
+
+</RelativeLayout>

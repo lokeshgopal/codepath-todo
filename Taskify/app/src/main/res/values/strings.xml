@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Taskify</string>
+    <string name="no_tasks">You have no TO DO\'s</string>
+    <string name="add_tasks">Add TO DO items</string>
+    <string name="task_title">Title</string>
+    <string name="task_desc">Notes</string>
+    <string name="task_due">Due date</string>
+    <string name="task_priority">Priority</string>
+    <string name="task_status">Status</string>
+    <string name="menu_save">Save</string>
+    <string name="menu_add">Add task</string>
+    <string name="menu_delete">Delete</string>
+    <string name="add_activity_title">Add TO-DO</string>
+    <string name="edit_activity_title">Edit TO-DO</string>
+    <string name="detail_activity_title">TO DO</string>
+    <string name="msg_save">"Saved TODO!</string>
+    <string name="msg_save_error">Unable to save TODO!</string>
+    <string name="msg_error_load_tasks">Error while loading tasks !</string>
+    <string name="msg_deleted">Task is deleted !</string>
+    <string name="msg_missing_task">Task is not available</string>
+    <string name="txt_done">DONE</string>
+    <string name="txt_not_done">NOT DONE</string>
+    <string name="msg_missing_taskinfo">Task title and description is empty !</string>
+
+    <string-array name="priority_status">
+        <item>HIGH</item>
+        <item>MEDIUM</item>
+        <item>LOW</item>
+    </string-array>
+
+    <string-array name="todo_status">
+        <item>DONE</item>
+        <item>NOT DONE</item>
+    </string-array>
+
+</resources>

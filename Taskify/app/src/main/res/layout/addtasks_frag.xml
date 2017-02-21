@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addtask"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/task_title">
+    </TextView>
+
+    <EditText
+        android:id="@+id/task_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nameLabel"
+        android:layout_alignBottom="@+id/nameLabel"
+        android:layout_toRightOf="@+id/nameLabel"
+        android:layout_marginBottom="10dp"
+        android:hint="Task name"
+        android:ems="15">
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/descLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameLabel"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/task_desc">
+    </TextView>
+
+    <EditText
+        android:id="@+id/task_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/descLabel"
+        android:layout_alignBottom="@+id/descLabel"
+        android:layout_toRightOf="@+id/descLabel"
+        android:layout_marginBottom="10dp"
+        android:hint="Task description"
+        android:ems="20">
+    </EditText>
+
+    <TextView
+        android:id="@+id/dateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descLabel"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/task_due">
+    </TextView>
+
+    <DatePicker
+        android:id="@+id/due_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:layout_toRightOf="@+id/dateLabel"
+        android:layout_below="@+id/task_desc"
+        android:layout_alignTop= "@+id/dateLabel"
+        android:layout_marginBottom="5dp"
+        >
+    </DatePicker>
+
+    <TextView
+        android:id="@+id/priorityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/due_date"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentLeft="true"
+        android:text="@string/task_priority">
+    </TextView>
+
+    <Spinner
+        android:id="@+id/priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/priorityLabel"
+        android:layout_toRightOf="@+id/priorityLabel"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/due_date" >
+    </Spinner>
+
+    <TextView
+        android:id="@+id/statusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/priorityLabel"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentLeft="true"
+        android:text="@string/task_status">
+    </TextView>
+
+    <Spinner
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/statusLabel"
+        android:layout_toRightOf="@+id/statusLabel"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/due_date" >
+    </Spinner>
+</RelativeLayout>
